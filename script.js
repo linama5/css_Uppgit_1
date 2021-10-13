@@ -21,16 +21,13 @@ function addingTask(event) {
 
   //verifying that the text field is no empty
   if (!toDoInput.value) {
+    
+    alertp.innerHTML = "input must not be empty";
 
-    alertp.innerHTML="input must not be empty";
-     
     return false;
   } else {
-
-//delete the alert 
-
-
-alertp.innerHTML ="";
+    //delete the alert inner text
+    alertp.innerHTML = "";
 
     //create a div in HTML
     const todoDiv = document.createElement("div");
