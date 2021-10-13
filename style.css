@@ -26,24 +26,14 @@ body {
 }
 
 .form {
+
   margin: 5% 5% 5% 5%;
 }
 
-p,
+.numberOfComplete,
 h1,
 .form {
   animation: fadein 2s ease-in;
-}
-
-.todoList{
- list-style: none;
- justify-content: space-between;
-}
-
-.taskItem{
-  display: inline-flex;
-  align-items: center;
-  animation: fadein 1s ease-in;
 }
 
 @keyframes fadein {
@@ -54,6 +44,39 @@ h1,
     opacity: 1;
   }
 }
+
+.todoList{
+ list-style: none;
+ margin: 2% 30% 2% 30%;
+}
+
+.todo{
+  
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  animation: window-fade 500ms ease-in;
+
+}
+@keyframes window-fade {
+
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+
+  75% {
+    transform: translateY(10%);
+    
+  }
+  100% {
+    transform: translateY(0%);
+    opacity:1;
+  }
+
+}
+
+
 .taskInput {
   font-size: 2rem;
 }
@@ -78,5 +101,5 @@ h1,
 
 .deleteButton{
 
-
+margin-right: 0%;
 }
