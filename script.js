@@ -107,6 +107,7 @@ function myCounter() {
 }
 
 function countToCero() {
+ 
   number.innerHTML = 0;
   numberdiv.append(number);
 }
