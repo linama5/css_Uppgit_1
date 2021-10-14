@@ -90,10 +90,9 @@ function eventClick(e) {
     const parent1 = buttonOnclicked.parentElement;
     parent1.classList.toggle("completed");
 
-   myCounter();
-    }
+    myCounter();
   }
-
+}
 
 function myCounter() {
   var count = 0;
@@ -104,12 +103,10 @@ function myCounter() {
       number.innerText = count;
       numberdiv.appendChild(number);
     }
+  }
 }
-}
 
-function countToCero(){
-
-number.innerHTML = 0;
-numberdiv.append(number);
-
+function countToCero() {
+  number.innerHTML = 0;
+  numberdiv.append(number);
 }
