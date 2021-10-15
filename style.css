@@ -28,6 +28,7 @@ body {
 
 .form {
   margin: 5% 5% 5% 5%;
+  font-size: 10px;
 }
 
 .numberOfComplete,
@@ -53,7 +54,7 @@ h1,
 }
 
 .todo {
-  font-size: 40px;
+  font-size: 30px;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -75,17 +76,17 @@ h1,
 }
 
 .taskInput {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .addButton {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 0%;
 }
 
 .alert {
   color: red;
-  font-size: 20px;
+  font-size: 15px;
   font-style: italic;
   animation: blinka 300ms linear infinite;
 }
@@ -106,7 +107,7 @@ h1,
 }
 
 .deleteButton {
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 0%;
 }
 .numberOfComplete{
