@@ -1,28 +1,26 @@
 //check if JS file is loaded
 console.log("script.js is loaded");
 
-//selectors
+//Selectors
 
 const toDoInput = document.querySelector(".taskInput");
 const toDoButton = document.querySelector(".addButton");
 const toDoList = document.querySelector(".todoList");
 const alertp = document.querySelector(".alert");
 
+
 const number = document.createElement("p");
 const numberdiv = document.querySelector(".numberOfComplete");
 
 const todoListArray = [];
 
-//event listeners
+//Event listeners
 
 toDoButton.addEventListener("click", addingTask);
-//toDoList.addEventListener("click", eventClick);
-
 toDoList.addEventListener("click", eventClick);
 
-toDoInput.addEventListener("click", countToCero);
 
-//functions
+//Functions
 
 function addingTask(event) {
   event.preventDefault();
@@ -33,21 +31,24 @@ function addingTask(event) {
 
     return false;
   } else {
-    //delete the alert inner text
+
+    //Delete the alert inner text
+
     alertp.innerHTML = "";
 
-    //create a div in HTML
+    //Create a div in HTML
+
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
 
-    //create list and adding it to the div
+    //Create list and adding it to the div
 
     const newTodo = document.createElement("li");
     newTodo.innerText = toDoInput.value;
     newTodo.classList.add("taskItem");
     todoDiv.appendChild(newTodo);
 
-    //create the delete button and adding to the div
+    //Create the delete button and adding to the div
 
     const deleteButton = document.createElement("button");
 
@@ -95,19 +96,17 @@ function eventClick(e) {
 }
 
 function myCounter() {
+  
   var count = 0;
   for (let i = 0; i < todoListArray.length; i++) {
     if (todoListArray[i].classList == "todo completed") {
       ++count;
-
-      number.innerText = count;
-      numberdiv.appendChild(number);
     }
   }
+  number.innerText = count;
+  number.classList.add("number");
+  numberdiv.appendChild(number);
+
 }
 
-function countToCero() {
- 
-  number.innerHTML = 0;
-  numberdiv.append(number);
-}
+
