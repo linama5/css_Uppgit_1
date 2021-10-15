@@ -1,15 +1,16 @@
 body {
   height: 1000px;
-  background-image: linear-gradient(rgb(223, 202, 202), rgb(240, 96, 96));
+  background-image: linear-gradient(rgb(252, 198, 198), rgb(218, 96, 96));
 }
 
 .box {
   text-align: center;
+  box-shadow: 1px 1px 10px  grey;
   margin: 5% 30% 0% 30%;
-  font-size: 30px;
-  background-color: rgb(245, 243, 240);
-  padding: 2%;
-  animation: winLoad 1000ms ease-in-out;
+  font-size: 25px;
+  background-color: white;
+  padding: 1%;
+  animation: winLoad 800ms ease-in-out;
 }
 
 @keyframes winLoad {
@@ -32,6 +33,7 @@ body {
 .numberOfComplete,
 h1,
 .form {
+  padding: 0%;
   animation: fadein 2s ease-in;
 }
 
@@ -43,6 +45,7 @@ h1,
     opacity: 1;
   }
 }
+
 
 .todoList {
   list-style: none;
@@ -107,8 +110,21 @@ h1,
   margin-right: 0%;
 }
 .numberOfComplete{
-margin: 5% 20% 5% 20%;
+  position: relative;
+margin: 5% 40% 5% 40%;
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+.number{
+
+  position: absolute;
+  left:0;
+}
+
+
+
+.textComplete{
+  position: absolute;
+  left:30px;
 }
